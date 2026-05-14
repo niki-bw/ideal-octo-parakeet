@@ -1,7 +1,3 @@
-// Address change automation for legacy carrier portal
-// Extended from the existing login-only RPA — address update steps added below the login block
-// TODO: other carriers still only have the login portion; this is the first one with actual work
-
 import { createBrowser } from '../browser/browser.ts';
 import { delay } from '../utils/delay.ts';
 import { logger } from '../utils/logger.ts';
