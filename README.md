@@ -1,16 +1,4 @@
-# Carrier Automation Exercise
-
-## Background
-
-GordonWally is an insurance agency. When customers submit address change requests through the GordonWally website, agents currently log into each carrier's portal manually and update the address on the customer's behalf.
-
-Most carriers do not offer APIs. The only path to automation is browser-level interaction with each carrier's web portal.
-
-We already have RPA scripts that log into a number of portals — these were built to verify that credentials work and sessions can be established. They navigate to the login page, authenticate, confirm a successful session, and stop. **They take no further action.**
-
-**We now want to extend those automations to actually perform address changes, and scale that capability to 100+ portals.**
-
----
+# Address Change Automation Exercise
 
 ## The Problem
 
@@ -44,15 +32,15 @@ src/
   samples/
     sampleRequest.json  # Example address change request payload
   examples/
-    legacyCarrierExample.ts  # One carrier implementation — written quickly, rough around the edges
+    legacyCarrierExample.ts  # One implementation — written quickly, rough around the edges
   index.ts              # Entry point
 ```
 
 The `browser.ts` layer simulates what a real browser automation library would do. No actual browser is launched. Actions are logged, artificially delayed, and occasionally fail to simulate real-world conditions.
 
-### Demo Carrier Sites
+### Demo Portals
 
-Two hosted demo sites are available for hands-on exploration during the exercise:
+Two hosted demo portals are available for hands-on exploration during the exercise:
 
 - **Portal 1**: `https://niki-bw.github.io/mockaddresschange/Site1/login.html` 
 - Login Username: agent Password: demo123
