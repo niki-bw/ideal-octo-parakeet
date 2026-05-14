@@ -8,13 +8,8 @@ Portals are wildly inconsistent:
 - Field names, selectors, and navigation flows differ across every site.
 - Some require MFA. Some have session timeouts. Some have unreliable confirmation messages.
 - Sites occasionally change layouts without notice.
-- A few carriers have two entirely separate portals for old vs. new policies.
 
 There is no standard. Every portal is its own special case.
-
-The login-only automations gave us a foothold, but they were each written independently and don't share much structure. Some are clean; some are rough. Extending them — without creating a maintenance nightmare — is the real challenge.
-
-Supporting one or two portals by hand is straightforward. Supporting 100+ — and keeping them working over time — is a real engineering challenge.
 
 ---
 
