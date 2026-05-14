@@ -1,11 +1,12 @@
 {
   "requestId": "REQ-2024-001",
   "customerId": "CUST-8821",
-  "customerName": "Jane Doe",
-  "carrier": "legacy-carrier",
-  "policyNumber": "PL-00482931",
-  "agentUsername": "agent@brightway.com",
-  "agentPassword": "PLACEHOLDER_REPLACE_WITH_VAULT_SECRET",
+  "customerFirstName": "Tom",
+  "customerLastName": "Johnson",
+  "carrier": "BrunoNational",
+  "policyNumber": "SNI-00567890",
+  "agentUsername": "agent",
+  "agentPassword": "demo123",
   "oldAddress": {
     "street": "123 Old Street",
     "city": "Tampa",

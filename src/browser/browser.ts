@@ -1,8 +1,8 @@
 // Mocked browser layer — simulates page navigation, interactions, and occasional failures.
 // No real browser is launched. Actions are logged and delayed to feel realistic.
 
-import { randomDelay } from '../utils/delay';
-import { logger } from '../utils/logger';
+import { randomDelay } from '../utils/delay.ts';
+import { logger } from '../utils/logger.ts';
 
 // Rough failure simulation. Tune this up to stress-test retry logic.
 const FAILURE_RATE = 0.06;

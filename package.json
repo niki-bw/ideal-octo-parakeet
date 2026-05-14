@@ -2,14 +2,14 @@
   "name": "carrier-automation-exercise",
   "version": "0.1.0",
   "description": "Interview exercise: scalable browser automation architecture for carrier address updates",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "node --experimental-strip-types src/index.ts",
     "build": "tsc"
   },
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.4.5",
-    "ts-node": "^10.9.2",
     "@types/node": "^20.12.7"
   }
 }

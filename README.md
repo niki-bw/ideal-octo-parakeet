@@ -54,8 +54,10 @@ The `browser.ts` layer simulates what a real browser automation library would do
 
 Two hosted demo sites are available for hands-on exploration during the exercise:
 
-- **Modern carrier**: `https://demo-modern-carrier.example.com` *(placeholder)*
-- **Legacy carrier**: `https://demo-legacy-carrier.example.com` *(placeholder)*
+- **Portal 1**: `https://niki-bw.github.io/mockaddresschange/Site1/login.html` 
+- Login Username: agent Password: demo123
+- **Portal 2**: `https://niki-bw.github.io/mockaddresschange/Site2/login.html` 
+- Login Username: jsmith Password: Welcome1
 
 These sites intentionally behave differently from each other to simulate the inconsistency found in real carrier portals.
 
@@ -67,61 +69,3 @@ These sites intentionally behave differently from each other to simulate the inc
 npm install
 npm run dev
 ```
-
-That's it. No browser drivers, no external services.
-
----
-
-## The Exercise
-
-The existing code shows one carrier extended from a login-only automation to perform an address update. It works, but it doesn't scale. Your goal is to **think through and begin scaffolding an approach** that could support 100+ carriers sustainably — including deciding how (or whether) to build on top of the existing login scripts.
-
-You do not need to implement everything. Architectural reasoning and the decisions you make under ambiguity matter more than a complete implementation.
-
-**Use whatever tools help you move fast** — including AI assistants. The ability to leverage AI tooling to accelerate onboarding and code generation is part of what we're evaluating.
-
----
-
-## Discussion Prompts
-
-Come ready to talk through your thinking on questions like these:
-
-**Scale**
-- How would you structure the codebase to support 100+ carriers without it becoming unmanageable?
-- We have login-only automations for some carriers already. How do you build on top of them without making a mess?
-- What would a new carrier onboarding workflow look like? How long should it take?
-- What would you standardize across all carriers, and what would you leave carrier-specific?
-
-**Maintainability**
-- Carrier UIs drift over time. How would you detect when an automation breaks?
-- How would you make it easy for someone unfamiliar with a carrier to fix a broken automation?
-- What does a runbook for a failing carrier look like?
-
-**Operational Resiliency**
-- How would you handle flaky carriers — sites that succeed 80% of the time?
-- How would you surface failures to the team without waking someone up for every transient error?
-- What retry and escalation logic makes sense?
-
-**Edge Cases**
-- How would you handle MFA?
-- What do you do when there's no reliable confirmation message?
-- How would you handle a carrier that has two completely different portal versions?
-
-**AI-Assisted Development**
-- How could AI tooling reduce the time it takes to onboard a new carrier?
-- How would you use AI to help generate or maintain carrier-specific automation scripts?
-- Where does AI help most, and where does it need a human in the loop?
-
-**Tooling**
-- What operational dashboards or tooling would you want to build?
-- How would you give non-engineers (operations staff) visibility into automation status?
-
----
-
-## A Note on the Existing Code
-
-`legacyCarrierExample.ts` represents one carrier where the login-only automation was extended to perform an address update. The login block was ported directly from the existing script; the address update steps were added on top. It was written quickly to get something working.
-
-It has obvious problems. That's intentional — it creates a starting point for discussion and improvement.
-
-Feel free to critique it, refactor it, extend it, or discard the approach entirely. There's no right answer baked into this repo.

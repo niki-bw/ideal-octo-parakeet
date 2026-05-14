@@ -1,6 +1,6 @@
-import { updateAddressOnLegacyCarrier } from './examples/legacyCarrierExample';
-import { logger } from './utils/logger';
-import sampleRequest from './samples/sampleRequest.json';
+import { updateAddressOnLegacyCarrier } from './examples/legacyCarrierExample.ts';
+import { logger } from './utils/logger.ts';
+import sampleRequest from './samples/sampleRequest.json' with { type: 'json' };
 
 async function main() {
   logger.info('=== Carrier Automation Exercise ===');
