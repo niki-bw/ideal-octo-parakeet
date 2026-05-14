@@ -2,19 +2,19 @@
 
 ## Background
 
-Brightway is an insurance agency. When customers submit address change requests through the Brightway website, agents currently log into each carrier's portal manually and update the address on the customer's behalf.
+GordonWally is an insurance agency. When customers submit address change requests through the GordonWally website, agents currently log into each carrier's portal manually and update the address on the customer's behalf.
 
 Most carriers do not offer APIs. The only path to automation is browser-level interaction with each carrier's web portal.
 
-We already have RPA scripts that log into a number of carrier sites — these were built to verify that credentials work and sessions can be established. They navigate to the login page, authenticate, confirm a successful session, and stop. **They take no further action.**
+We already have RPA scripts that log into a number of portals — these were built to verify that credentials work and sessions can be established. They navigate to the login page, authenticate, confirm a successful session, and stop. **They take no further action.**
 
-**We now want to extend those automations to actually perform address changes, and scale that capability to 100+ carrier sites.**
+**We now want to extend those automations to actually perform address changes, and scale that capability to 100+ portals.**
 
 ---
 
 ## The Problem
 
-Carrier portals are wildly inconsistent:
+Portals are wildly inconsistent:
 
 - Some are modern single-page apps. Some are 15-year-old server-rendered portals.
 - Field names, selectors, and navigation flows differ across every site.
@@ -22,11 +22,11 @@ Carrier portals are wildly inconsistent:
 - Sites occasionally change layouts without notice.
 - A few carriers have two entirely separate portals for old vs. new policies.
 
-There is no standard. Every carrier is its own special case.
+There is no standard. Every portal is its own special case.
 
 The login-only automations gave us a foothold, but they were each written independently and don't share much structure. Some are clean; some are rough. Extending them — without creating a maintenance nightmare — is the real challenge.
 
-Supporting one or two carriers by hand is straightforward. Supporting 100+ — and keeping them working over time — is a real engineering challenge.
+Supporting one or two portals by hand is straightforward. Supporting 100+ — and keeping them working over time — is a real engineering challenge.
 
 ---
 
@@ -59,7 +59,7 @@ Two hosted demo sites are available for hands-on exploration during the exercise
 - **Portal 2**: `https://niki-bw.github.io/mockaddresschange/Site2/login.html` 
 - Login Username: jsmith Password: Welcome1
 
-These sites intentionally behave differently from each other to simulate the inconsistency found in real carrier portals.
+These sites intentionally behave differently from each other to simulate the inconsistency found in real portals.
 
 ---
 
