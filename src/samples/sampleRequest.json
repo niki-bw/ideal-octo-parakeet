@@ -1,0 +1,21 @@
+{
+  "requestId": "REQ-2024-001",
+  "customerId": "CUST-8821",
+  "customerName": "Jane Doe",
+  "carrier": "legacy-carrier",
+  "policyNumber": "PL-00482931",
+  "agentUsername": "agent@brightway.com",
+  "agentPassword": "PLACEHOLDER_REPLACE_WITH_VAULT_SECRET",
+  "oldAddress": {
+    "street": "123 Old Street",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33601"
+  },
+  "newAddress": {
+    "street": "456 New Avenue",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32801"
+  }
+}
