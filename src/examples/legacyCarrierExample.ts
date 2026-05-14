@@ -10,7 +10,7 @@ import { logger } from '../utils/logger.ts';
 const CARRIER_LOGIN_URL = 'https://demo-legacy-carrier.example.com/login';
 const CARRIER_SEARCH_URL = 'https://demo-legacy-carrier.example.com/policies/search';
 
-export async function updateAddressOnLegacyCarrier(request: any) {
+export async function viewPolicyDetails(request: any) {
   const browser = createBrowser();
 
   logger.info(`Starting address update — policy ${request.policyNumber}`);

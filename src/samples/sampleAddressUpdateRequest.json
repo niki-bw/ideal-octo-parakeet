@@ -1,0 +1,22 @@
+{
+  "requestId": "REQ-2024-001",
+  "customerId": "CUST-8821",
+  "customerFirstName": "Tom",
+  "customerLastName": "Johnson",
+  "carrier": "BrunoNational",
+  "policyNumber": "SNI-00567890",
+  "agentUsername": "agent",
+  "agentPassword": "demo123",
+  "oldAddress": {
+    "street": "123 Old Street",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33601"
+  },
+  "newAddress": {
+    "street": "456 New Avenue",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32801"
+  }
+}

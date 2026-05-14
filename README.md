@@ -56,6 +56,7 @@ Two hosted demo sites are available for hands-on exploration during the exercise
 
 - **Portal 1**: `https://niki-bw.github.io/mockaddresschange/Site1/login.html` 
 - Login Username: agent Password: demo123
+- Loom video: https://www.loom.com/share/c5ddd79cbf054c81be1aac21e13b2044
 - **Portal 2**: `https://niki-bw.github.io/mockaddresschange/Site2/login.html` 
 - Login Username: jsmith Password: Welcome1
 
@@ -69,3 +70,6 @@ These sites intentionally behave differently from each other to simulate the inc
 npm install
 npm run dev
 ```
+
+This will execute the examples/legacyCarrierExample.js automation using the data in samples/sampleRequest.json.
+
